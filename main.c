@@ -13,29 +13,42 @@ int main(int argc, char *argv[]) {
   int p;
   int essais;
 
-  printf("Veuillez insérer le nombre de n\n");
-  scanf("%u", &n);
 
-  printf("Veuillez insérer le nombre de p\n");
-  scanf("%u", &p);
 
   while((val=getopt(argc, argv, optstring))!=EOF){
     switch(val){
 
       case 's':
+        printf("Veuillez insérer le nombre de n\n");
+        scanf("%d", &n);
+
+        printf("Veuillez insérer le nombre de p\n");
+        scanf("%d", &p);
+
         printf("Veuillez insérer le nombre d'essais que vous voulez effectuer\n");
-        scanf("%u", &essais);
+        scanf("%d", &essais);
         simulation(n, p, essais);
         check = 1;
         break;
 
       case 'c':
+        printf("Veuillez insérer le nombre de n\n");
+        scanf("%d", &n);
+
+        printf("Veuillez insérer le nombre de p\n");
+        scanf("%d", &p);
 
         analyseCombinatoire(n, p);
         check = 1;
         break;
 
       case 'e':
+        printf("Veuillez insérer le nombre de n\n");
+        scanf("%d", &n);
+
+        printf("Veuillez insérer le nombre de p\n");
+        scanf("%d", &p);
+
         exhaustive(n, p);
         check =1;
         break;
@@ -47,7 +60,7 @@ int main(int argc, char *argv[]) {
     }
 
     if(!check)
-      printf("-s pour une simulation, -c pour l'analyse combinatoire\n");
+      printf("-s pour une simulation, -c pour l'analyse combinatoire, -e pour une recherche exhaustive\n");
 
 
 

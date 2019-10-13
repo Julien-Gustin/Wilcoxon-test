@@ -3,7 +3,9 @@
 #include <time.h>
 #include "analyseCombinatoire.h"
 
-int w(int n, int p, int i){
+static int w(int n, int p, int i);
+
+static int w(int n, int p, int i){
 
 
   if(i < 0 || i > n*p)

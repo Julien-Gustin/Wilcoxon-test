@@ -34,7 +34,7 @@ void simulation(int o, int x, int essais){
       if(rand()%(xtmp + otmp) < xtmp){
         xtmp--;
         tab[i] = 'x';
-        printf("[x]");
+        //printf("[x]");
         nbrCroix++;
         stockageCroix += nbrRond;
       }
@@ -42,20 +42,20 @@ void simulation(int o, int x, int essais){
       else{
         otmp--;
         tab[i] = 'o';
-        printf("[o]");
+        //printf("[o]");
         nbrRond++;
         stockageRond += nbrCroix;
       }
 
     }
-    printf("\n");
+    //printf("\n");
 
 
         if(abs(stockageRond - stockageCroix) >= 45)
           scoresExtremes++;
 
 
-      printf("\n Les Ronds en remportent %u et les croix %u\n", stockageRond, stockageCroix);
+      //printf("\n Les Ronds en remportent %u et les croix %u\n", stockageRond, stockageCroix);
 
     }
 
