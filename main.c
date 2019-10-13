@@ -3,9 +3,10 @@
 #include <getopt.h>
 #include "simulation.h"
 #include "analyseCombinatoire.h"
+#include "rechercheExhaustive.h"
 
 int main(int argc, char *argv[]) {
-  char *optstring = ":sc";
+  char *optstring = ":sce";
   char val;
   int check = 0;
   int n;
@@ -34,6 +35,11 @@ int main(int argc, char *argv[]) {
         check = 1;
         break;
 
+      case 'e':
+        exhaustive(n, p);
+        check =1;
+        break;
+
 
       default:
         printf("erreur");
@@ -42,6 +48,7 @@ int main(int argc, char *argv[]) {
 
     if(!check)
       printf("-s pour une simulation, -c pour l'analyse combinatoire\n");
+
 
 
 
