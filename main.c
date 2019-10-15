@@ -1,17 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 #include <getopt.h>
-#include "simulation.h"
-#include "analyseCombinatoire.h"
-#include "rechercheExhaustive.h"
+#include "wilcoxon.h"
 
 int main(int argc, char *argv[]) {
-  char *optstring = ":sce";
+  char *optstring = ":sce"; //argument du programme // s = simulation , c = analyse combinatoire et e = recherche exhaustive
   char val;
-  int check = 0;
-  int n;
-  int p;
-  int essais;
+  short check = 0; // permet de vérifier si l'utilisateur compile bien aved -s , -c ou -e
+  unsigned int n;
+  unsigned int p;
+  unsigned int essais;
 
 
 
@@ -20,23 +18,23 @@ int main(int argc, char *argv[]) {
 
       case 's':
         printf("Veuillez insérer le nombre de n\n");
-        scanf("%d", &n);
+        scanf("%u", &n);
 
         printf("Veuillez insérer le nombre de p\n");
-        scanf("%d", &p);
+        scanf("%u", &p);
 
         printf("Veuillez insérer le nombre d'essais que vous voulez effectuer\n");
-        scanf("%d", &essais);
+        scanf("%u", &essais);
         simulation(n, p, essais);
         check = 1;
         break;
 
       case 'c':
         printf("Veuillez insérer le nombre de n\n");
-        scanf("%d", &n);
+        scanf("%u", &n);
 
         printf("Veuillez insérer le nombre de p\n");
-        scanf("%d", &p);
+        scanf("%u", &p);
 
         analyseCombinatoire(n, p);
         check = 1;
@@ -44,10 +42,10 @@ int main(int argc, char *argv[]) {
 
       case 'e':
         printf("Veuillez insérer le nombre de n\n");
-        scanf("%d", &n);
+        scanf("%u", &n);
 
         printf("Veuillez insérer le nombre de p\n");
-        scanf("%d", &p);
+        scanf("%u", &p);
 
         exhaustive(n, p);
         check =1;
