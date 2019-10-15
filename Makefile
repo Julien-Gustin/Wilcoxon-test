@@ -13,8 +13,8 @@ LD=gcc
 
 # Files
 EXEC_WILCOXON=main
-MODULES_WILCOXON=main.c analyseCombinatoire.c rechercheExhaustive.c simulation.c
-OBJECTS_WILCOXON=main.o analyseCombinatoire.o rechercheExhaustive.o simulation.o
+MODULES_WILCOXON=main.c analyseCombinatoire.c rechercheExhaustive2.c simulation.c
+OBJECTS_WILCOXON=main.o analyseCombinatoire.o rechercheExhaustive2.o simulation.o
 
 
 EXEC_ALL=main
@@ -32,8 +32,8 @@ main.o: main.c
 analyseCombinatoire.o: analyseCombinatoire.c
 	$(CC) -c analyseCombinatoire.c -o analyseCombinatoire.o $(CFLAGS)
 
-rechercheExhaustive.o: rechercheExhaustive.c
-	$(CC) -c rechercheExhaustive.c -o rechercheExhaustive.o $(CFLAGS)
+rechercheExhaustive2.o: rechercheExhaustive2.c
+	$(CC) -c rechercheExhaustive2.c -o rechercheExhaustive2.o $(CFLAGS)
 
 simulation.o: simulation.c
 	$(CC) -c simulation.c -o simulation.o $(CFLAGS)
