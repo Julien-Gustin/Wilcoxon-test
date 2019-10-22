@@ -27,7 +27,6 @@ void simulation(unsigned int n, unsigned int p, unsigned int essais){ // o x
   srand(time(NULL));
 
   for(unsigned int j = 0; j < essais; j++){
-
     nTmp = n;
     pTmp = p;
     nbrN = 0;

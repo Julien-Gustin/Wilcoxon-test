@@ -50,6 +50,7 @@ static void calculScoreExtreme(char *tab, unsigned int taille, unsigned int *sco
 
   if(abs(stockageN - stockageP) >= 45) // calcul l'ecart du score de wilcoxon entre 'n' et 'p'
     (*scoresExtremes)++;
+    
   return;
 }
 

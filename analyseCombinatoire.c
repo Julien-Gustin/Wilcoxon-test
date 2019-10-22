@@ -17,7 +17,6 @@
 static int w(unsigned int n, unsigned int p, unsigned int i);
 
 static int w(unsigned int n, unsigned int p, unsigned int i){
-
   if(i > n*p)
     return 0;
 
@@ -36,7 +35,6 @@ void analyseCombinatoire(unsigned int n, unsigned int p){
   t1 = clock(); // Lancement du chrono
 
   for(unsigned int i = 0; i <= n*p; i++){
-
     if(abs(i - ((n*p)-i)) >= 45) // un écart de 45 points ou plus est considéré comme un score extreme
       sExtremes += w(n, p, i);
 
@@ -45,12 +43,10 @@ void analyseCombinatoire(unsigned int n, unsigned int p){
   }
 
   mots += sExtremes;
-
   t2 = clock(); // fin du chrono
   temps = (float)(t2-t1)/CLOCKS_PER_SEC; // durée de l'exécution du programme
 
   printf("durée de l'exécution = %f secondes\n", temps);
   printf("\nil y a exactement %u mots, parmi lesquels %u donnent lieu à des scores \"extremes\" %f %%\n\n", mots, sExtremes, (float)(sExtremes)/(float)(mots)*100);
-
 
 }

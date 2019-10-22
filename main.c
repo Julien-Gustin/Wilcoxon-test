@@ -49,7 +49,6 @@ int main(int argc, char *argv[]) {
         check =1;
         break;
 
-
       default:
         printf("erreur");
         }
@@ -57,5 +56,5 @@ int main(int argc, char *argv[]) {
 
     if(!check)
       printf("-s pour une simulation, -c pour l'analyse combinatoire, -e pour une recherche exhaustive\n");
-
+      
 }
