@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.3.23)  22 OCT 2019 22:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.3.23)  23 OCT 2019 22:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -363,6 +363,9 @@ Package: clrscode3e
 \codeboxwidth=\skip62
 \c@thisindent=\count131
 )
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/fourier-orns.sty
+Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
+)
 (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
@@ -421,27 +424,30 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-(./Rapport_Wilcoxon.aux)
+(./Rapport_Wilcoxon.aux
+
+LaTeX Warning: Label `Tableau' multiply defined.
+
+)
 \openout1 = `Rapport_Wilcoxon.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Info: Redefining \degres on input line 97.
-LaTeX Info: Redefining \dots on input line 97.
-LaTeX Info: Redefining \up on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Info: Redefining \degres on input line 99.
+LaTeX Info: Redefining \dots on input line 99.
+LaTeX Info: Redefining \up on input line 99.
 \c@lstlisting=\count132
-
-(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen134
@@ -533,16 +539,17 @@ Package minitoc(hints) Warning: W0039
 (minitoc(hints))                --- The \section command is altered 
 (minitoc(hints))                after minitoc.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+LaTeX Font Info:    Try loading font information for U+msa on input line 100.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+LaTeX Font Info:    Try loading font information for U+msb on input line 100.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 99.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 101.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -554,6 +561,53 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+futs on input line 126.
+(/usr/share/texlive/texmf-dist/tex/latex/fourier/ufuts.fd
+File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
+)
+LaTeX Font Info:    Font shape `U/futs/bx/n' in size <10.95> not available
+(Font)              Font shape `U/futs/b/n' tried instead on input line 126.
+<exemple.png, id=11, 977.6525pt x 553.06625pt>
+File: exemple.png Graphic file (type png)
+<use exemple.png>
+Package pdftex.def Info: exemple.png  used on input line 131.
+(pdftex.def)             Requested size: 488.82506pt x 276.53244pt.
+
+Overfull \hbox (35.85716pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+[2 <./exemple.png>]
+<graphique1.png, id=25, 673.51625pt x 488.82625pt>
+File: graphique1.png Graphic file (type png)
+<use graphique1.png>
+Package pdftex.def Info: graphique1.png  used on input line 144.
+(pdftex.def)             Requested size: 269.40172pt x 195.52702pt.
+<stats1.png, id=26, 203.76125pt x 533.995pt>
+File: stats1.png Graphic file (type png)
+<use stats1.png>
+Package pdftex.def Info: stats1.png  used on input line 149.
+(pdftex.def)             Requested size: 101.88037pt x 266.99684pt.
+ [3 <./graphique1.png> <./Stats1.png>]
+<graphique2.png, id=35, 602.25pt x 390.45876pt>
+File: graphique2.png Graphic file (type png)
+<use graphique2.png>
+Package pdftex.def Info: graphique2.png  used on input line 161.
+(pdftex.def)             Requested size: 301.12425pt x 195.2289pt.
+<tableau2.png, id=36, 815.045pt x 533.995pt>
+File: tableau2.png Graphic file (type png)
+<use tableau2.png>
+Package pdftex.def Info: tableau2.png  used on input line 166.
+(pdftex.def)             Requested size: 407.5215pt x 266.99684pt.
+
+Overfull \hbox (293.71048pt too wide) in paragraph at lines 166--167
+[][] 
+ []
+
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Rapport_Wilcoxon.maf file.
@@ -569,28 +623,38 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the Rapport_Wilcoxon.log file.
 
-[2] (./Rapport_Wilcoxon.aux) ) 
+[4 <./graphique2.png> <./tableau2.png>] (./Rapport_Wilcoxon.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8692 strings out of 492641
- 118858 string characters out of 6131787
- 236813 words of memory out of 5000000
- 12213 multiletter control sequences out of 15000+600000
- 17352 words of font info for 48 fonts, out of 8000000 for 9000
+ 8800 strings out of 492641
+ 120414 string characters out of 6131787
+ 237109 words of memory out of 5000000
+ 12301 multiletter control sequences out of 15000+600000
+ 20682 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,49p,299b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-sup
-er-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/
-type1/public/cm-super/sfss1440.pfb>
-Output written on Rapport_Wilcoxon.pdf (2 pages, 90380 bytes).
+ 41i,8n,49p,395b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fo
+urier/fourier-orns.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
+
+Output written on Rapport_Wilcoxon.pdf (4 pages, 337870 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <limits.h>
 #include <getopt.h>
 #include "wilcoxon.h"
 
@@ -56,5 +57,5 @@ int main(int argc, char *argv[]) {
 
     if(!check)
       printf("-s pour une simulation, -c pour l'analyse combinatoire, -e pour une recherche exhaustive\n");
-      
+
 }

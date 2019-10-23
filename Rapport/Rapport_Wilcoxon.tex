@@ -26,6 +26,8 @@
 \usepackage{wrapfig}
 \usepackage{minitoc}
 \usepackage{clrscode3e}
+\usepackage{fourier-orns}
+\DeclareMathOperator{\comb}{C}
 
 
 
@@ -106,22 +108,65 @@
 	\section{Analyse théorique}
 	
 	\section{Utilisation du programme}
-	Pour utiliser le programme il suffit de suivre les consignes:
+	Pour utiliser le programme il suffit de suivre ces consignes:
 	\begin{enumerate}
 	
 \item Ouvrir la console dans le répértoire du fichier et écrivez make $\hookleftarrow$ ;
 \item \begin{itemize}[label=$\square$]
-	\item Compiler avec \textsc{./main -s} pour faire une simulation
-	\item Compiler avec \textsc{./main -c} pour l'analyse combinatoire
-	\item Compiler avec \textsc{./main -e} pour la recherche exhaustive
+	\item Compiler avec \textsc{./main -s} pour faire une simulation $\hookleftarrow$
+	\item Compiler avec \textsc{./main -c} pour l'analyse combinatoire $\hookleftarrow$
+	\item Compiler avec \textsc{./main -e} pour la recherche exhaustive $\hookleftarrow$
 \end{itemize}
 \item \begin{itemize}[label=$\square$]
-	\item '\textsc{n}' Le nombres de 'n', de la première variable
-	\item '\textsc{p}' Le nombres de 'p', de la seconde variable
-	\item Seulement pour la simulation, "\textsc{essais}" Est le nombres d'essais à effectuer
-	\end{itemize}
-	\item Il ne reste plus qu'a appuyer sur escape et le programme ce lance.
 
+	\item Insérer le nombre de \textit{n} (première variable) $\hookleftarrow$ 
+	\item Insérer le nombre de \textit{p} (seconde variable) $\hookleftarrow$
+	\item (Seulement pour la simulation, insérer le nombres d'\textit{essais} à effectuer $\hookleftarrow$)\\ 
+
+	\textbf{\color{BrickRed} \danger voir limites du programmes (.3)}
+	\end{itemize}
+	\item Il ne reste plus qu'à appuyer sur escape et le programme ce lance. "Scores extrêmes" est le nombre de fois où on obtient un score extrême, l'écart de score entre "l'équipe gagnante ou perdante" ( n ou p ) est $ \geq 45 $
+\item Exemple d'utilisation: \\ \begin{figure}[!h]
+			\centering
+\includegraphics[scale=0.5]{exemple.png}
+			\caption{Exemple}
+		\end{figure}
+		
 \end{enumerate}
+
+\newpage
+\section{Limites du programme}
+\subsection{Limites avec une durée infinis
+}
+
+\begin{figure}[!h]
+			\centering
+\includegraphics[scale=0.4]{graphique1.png}
+			\caption{Graphique}
+		\end{figure}
+		
+\begin{wrapfigure}[6]{l}{4cm}
+\includegraphics[scale=0.5]{stats1.png}
+\caption{Tableau}
+\label{Tableau}
+\end{wrapfigure}
+
+Pour un temps infinis le programme peut gérer aux maximums c'est cas ci ( voir tableau ) en effet la plus part des valeurs dont celle qui stocke le nombres de mots sont des \textsc{unsigned int} ainsi le nombre maximum représentable est de $2^{32}-1$ ainsi il suffit de calculer le 'N' et 'P' maximum pour le quel $\comb_{n+p}^n$ $\leq 2^{32}-1$. \\ rr
+\newpage
+
+\subsection{Limites avec une durée finie ( 15 secondes )}
+
+\begin{figure}[!h]
+			\centering
+\includegraphics[scale=0.5]{graphique2.png}
+			\caption{Graphique}
+		\end{figure}
+		
+\begin{wrapfigure}[6]{l}{4cm}
+\includegraphics[scale=0.5]{tableau2.png}
+\caption{Tableau2}
+\label{Tableau}
+\end{wrapfigure}
+
  
 \end{document}
