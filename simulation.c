@@ -58,5 +58,5 @@ void simulation(unsigned int n, unsigned int p, unsigned int essais){ // o x
       temps = (float)(t2-t1)/CLOCKS_PER_SEC;
       printf("durée de l'exécution = %f secondes\n", temps);
       printf("\nIl y a %lu scores extremes pour %u essais, %f %% ", scoresExtremes, essais, (float)(scoresExtremes)/(float)(essais)*100);
-
+      free(tab);
 }

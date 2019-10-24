@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.3.23)  23 OCT 2019 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.3.23)  24 OCT 2019 17:51
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **Rapport_Wilcoxon.tex
 (./Rapport_Wilcoxon.tex
@@ -424,11 +425,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-(./Rapport_Wilcoxon.aux
-
-LaTeX Warning: Label `Tableau' multiply defined.
-
-)
+(./Rapport_Wilcoxon.aux)
 \openout1 = `Rapport_Wilcoxon.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -447,7 +444,8 @@ LaTeX Info: Redefining \degres on input line 99.
 LaTeX Info: Redefining \dots on input line 99.
 LaTeX Info: Redefining \up on input line 99.
 \c@lstlisting=\count132
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count133
 \scratchdimen=\dimen134
@@ -560,58 +558,123 @@ File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-LaTeX Font Info:    Try loading font information for U+futs on input line 126.
+LaTeX Font Info:    Try loading font information for U+futs on input line 128.
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ufuts.fd
 File: ufuts.fd 2004/03/26 Fontinst v1.926 font definitions for U/futs.
 )
 LaTeX Font Info:    Font shape `U/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `U/futs/b/n' tried instead on input line 126.
-<exemple.png, id=11, 977.6525pt x 553.06625pt>
+(Font)              Font shape `U/futs/b/n' tried instead on input line 128.
+<exemple.png, id=14, 977.6525pt x 553.06625pt>
 File: exemple.png Graphic file (type png)
 <use exemple.png>
-Package pdftex.def Info: exemple.png  used on input line 131.
+Package pdftex.def Info: exemple.png  used on input line 133.
 (pdftex.def)             Requested size: 488.82506pt x 276.53244pt.
 
-Overfull \hbox (35.85716pt too wide) in paragraph at lines 131--132
+Overfull \hbox (35.85716pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
-[2 <./exemple.png>]
-<graphique1.png, id=25, 673.51625pt x 488.82625pt>
-File: graphique1.png Graphic file (type png)
-<use graphique1.png>
-Package pdftex.def Info: graphique1.png  used on input line 144.
-(pdftex.def)             Requested size: 269.40172pt x 195.52702pt.
-<stats1.png, id=26, 203.76125pt x 533.995pt>
+[3 <./exemple.png>]
+<Limites.png, id=28, 804.00375pt x 488.82625pt>
+File: Limites.png Graphic file (type png)
+<use Limites.png>
+Package pdftex.def Info: Limites.png  used on input line 146.
+(pdftex.def)             Requested size: 281.40553pt x 171.09174pt.
+<stats1.png, id=29, 203.76125pt x 533.995pt>
 File: stats1.png Graphic file (type png)
 <use stats1.png>
-Package pdftex.def Info: stats1.png  used on input line 149.
+Package pdftex.def Info: stats1.png  used on input line 151.
 (pdftex.def)             Requested size: 101.88037pt x 266.99684pt.
- [3 <./graphique1.png> <./Stats1.png>]
-<graphique2.png, id=35, 602.25pt x 390.45876pt>
-File: graphique2.png Graphic file (type png)
-<use graphique2.png>
-Package pdftex.def Info: graphique2.png  used on input line 161.
-(pdftex.def)             Requested size: 301.12425pt x 195.2289pt.
-<tableau2.png, id=36, 815.045pt x 533.995pt>
-File: tableau2.png Graphic file (type png)
-<use tableau2.png>
-Package pdftex.def Info: tableau2.png  used on input line 166.
-(pdftex.def)             Requested size: 407.5215pt x 266.99684pt.
 
-Overfull \hbox (293.71048pt too wide) in paragraph at lines 166--167
-[][] 
+Underfull \hbox (badness 2073) in paragraph at lines 152--152
+\T1/cmr/m/it/10.95 n \T1/cmr/m/n/10.95 borné vers le bas,
  []
 
+<exemple2.png, id=30, 826.08624pt x 199.74625pt>
+File: exemple2.png Graphic file (type png)
+<use exemple2.png>
+Package pdftex.def Info: exemple2.png  used on input line 161.
+(pdftex.def)             Requested size: 206.52104pt x 49.93643pt.
+
+Underfull \hbox (badness 2951) in paragraph at lines 156--164
+[][]\T1/cmr/m/n/10.95 Pour un temps in-fi-nis le pro-gramme qui est com-pilé en
+
+ []
+
+
+Underfull \hbox (badness 1776) in paragraph at lines 156--164
+\T1/cmr/bx/n/10.95 ana-lyse com-bi-na-toire \T1/cmr/m/n/10.95 ou \T1/cmr/bx/n/1
+0.95 re-cherche ex-haus-tive \T1/cmr/m/n/10.95 peut gé-rer
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 156--164
+\T1/cmr/m/n/10.95 aux maxi-mums ces cas ci ( voir ta-bleau ) en ef-fet la plus
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 156--164
+\T1/cmr/m/n/10.95 part des va-leurs, dont celle qui stocke le nombres de "n-p
+ []
+
+
+Underfull \hbox (badness 1859) in paragraph at lines 156--164
+\T1/cmr/m/n/10.95 mots" sont des \T1/cmr/m/sc/10.95 un-si-gned int \T1/cmr/m/n/
+10.95 ainsi le nombre de mots dif-
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 156--164
+\T1/cmr/m/n/10.95 fé-rents pos-sible est : $\OT1/cmr/m/n/10.95 2[] \OMS/cmsy/m/
+n/10.95 ^^@ \OT1/cmr/m/n/10.95 1$\T1/cmr/m/n/10.95 . Pour trou-ver ces ré-sul-t
+ats il
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 156--164
+\T1/cmr/m/n/10.95 a juste fallu cal-cu-ler les \T1/cmr/m/it/10.95 n \T1/cmr/m/n
+/10.95 et \T1/cmr/m/it/10.95 p \T1/cmr/m/n/10.95 maxi-mum pour les quels
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 156--164
+[][]$ $\OMS/cmsy/m/n/10.95 ^^T \OT1/cmr/m/n/10.95 2[] \OMS/cmsy/m/n/10.95 ^^@ \
+OT1/cmr/m/n/10.95 1$\T1/cmr/m/n/10.95 . Bien évi-de-ment \T1/cmr/m/it/10.95 n \
+T1/cmr/m/n/10.95 et \T1/cmr/m/it/10.95 p \T1/cmr/m/n/10.95 sont in-ter-chan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 156--164
+
+ []
+
+[4 <./Limites.png> <./Stats1.png> <./exemple2.png>]
+<graphique2.png, id=40, 602.25pt x 390.45876pt>
+File: graphique2.png Graphic file (type png)
+<use graphique2.png>
+Package pdftex.def Info: graphique2.png  used on input line 172.
+(pdftex.def)             Requested size: 240.89572pt x 156.18073pt.
+<tableau2.png, id=41, 815.045pt x 533.995pt>
+File: tableau2.png Graphic file (type png)
+<use tableau2.png>
+Package pdftex.def Info: tableau2.png  used on input line 178.
+(pdftex.def)             Requested size: 407.5215pt x 266.99684pt.
+ [5 <./graphique2.png> <./tableau2.png>]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the Rapport_Wilcoxon.maf file.
 \openout3 = `Rapport_Wilcoxon.maf'.
+
 
 
 Package minitoc(hints) Warning: W0037
@@ -623,38 +686,34 @@ Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the Rapport_Wilcoxon.log file.
 
-[4 <./graphique2.png> <./tableau2.png>] (./Rapport_Wilcoxon.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+(./Rapport_Wilcoxon.aux) ) 
 Here is how much of TeX's memory you used:
- 8800 strings out of 492641
- 120414 string characters out of 6131787
- 237109 words of memory out of 5000000
- 12301 multiletter control sequences out of 15000+600000
+ 8805 strings out of 492641
+ 120478 string characters out of 6131787
+ 239109 words of memory out of 5000000
+ 12305 multiletter control sequences out of 15000+600000
  20682 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,49p,395b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fo
-urier/fourier-orns.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1095.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfcc1095.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfss1200.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb>
-
-Output written on Rapport_Wilcoxon.pdf (4 pages, 337870 bytes).
+ 41i,8n,49p,806b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t
+1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/fourier/fourier-orns.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/pub
+lic/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc109
+5.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/share/te
+xmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/publ
+ic/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728
+.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/share/tex
+mf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/publi
+c/cm-super/sfti1095.pfb>
+Output written on Rapport_Wilcoxon.pdf (5 pages, 576949 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

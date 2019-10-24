@@ -36,12 +36,12 @@
 
 % Change la police des titres pour convenir à votre seul lecteur
 \usepackage{sectsty}
-\allsectionsfont{\sffamily\mdseries\upshape} 
+\allsectionsfont{\sffamily\mdseries\upshape}
 % Idem pour la table des matière.
-\usepackage[nottoc,notlof,notlot]{tocbibind} 
-\usepackage[titles,subfigure]{tocloft} 
+\usepackage[nottoc,notlof,notlot]{tocbibind}
+\usepackage[titles,subfigure]{tocloft}
 \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
-\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} 
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape}
 
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
 \newcommand{\coms}[1]{\textcolor{MidnightBlue}{#1}}
@@ -55,10 +55,10 @@
     numbers=left, % Ajoute une numérotation des lignes à gauche
     numbersep=5pt, % Distance entre les numérots de lignes et le code
     numberstyle=\tiny\color{mygray}, % Couleur des numéros de lignes
-    basicstyle=\tt\footnotesize, 
+    basicstyle=\tt\footnotesize,
     tabsize=3, % Largeur des tabulations par défaut
     keywordstyle=\tt\bf\footnotesize\color{Sepia}, % Style des mots-clés
-    extendedchars=true, 
+    extendedchars=true,
     captionpos=b, % sets the caption-position to bottom
     texcl=true, % Commentaires sur une ligne interprétés en Latex
     showstringspaces=false, % Ne montre pas les espace dans les chaines de caractères
@@ -106,11 +106,13 @@
 % Écrivez votre rapport ci-dessous.
 
 	\section{Analyse théorique}
-	
+	Le test de Wilcoxon proposé par Frank Wilcoxon en 1945 est un test statistique non paramétriques qui permet de tester l'hypothèse selon laquelle les médianes de chacun de deux groupes de données sont proches. Ce test calcul le score de deux "population" ou deux variables différentes ayant un
+
+	\newpage
 	\section{Utilisation du programme}
 	Pour utiliser le programme il suffit de suivre ces consignes:
 	\begin{enumerate}
-	
+
 \item Ouvrir la console dans le répértoire du fichier et écrivez make $\hookleftarrow$ ;
 \item \begin{itemize}[label=$\square$]
 	\item Compiler avec \textsc{./main -s} pour faire une simulation $\hookleftarrow$
@@ -119,9 +121,9 @@
 \end{itemize}
 \item \begin{itemize}[label=$\square$]
 
-	\item Insérer le nombre de \textit{n} (première variable) $\hookleftarrow$ 
+	\item Insérer le nombre de \textit{n} (première variable) $\hookleftarrow$
 	\item Insérer le nombre de \textit{p} (seconde variable) $\hookleftarrow$
-	\item (Seulement pour la simulation, insérer le nombres d'\textit{essais} à effectuer $\hookleftarrow$)\\ 
+	\item (Seulement pour la simulation, insérer le nombres d'\textit{essais} à effectuer $\hookleftarrow$)\\
 
 	\textbf{\color{BrickRed} \danger voir limites du programmes (.3)}
 	\end{itemize}
@@ -131,7 +133,7 @@
 \includegraphics[scale=0.5]{exemple.png}
 			\caption{Exemple}
 		\end{figure}
-		
+
 \end{enumerate}
 
 \newpage
@@ -141,32 +143,45 @@
 
 \begin{figure}[!h]
 			\centering
-\includegraphics[scale=0.4]{graphique1.png}
-			\caption{Graphique}
+\includegraphics[scale=0.35]{Limites.png}
+			\caption{Graphique montrant les limites du programme}
 		\end{figure}
-		
-\begin{wrapfigure}[6]{l}{4cm}
+
+\begin{wrapfigure}[22]{l}{4cm}
 \includegraphics[scale=0.5]{stats1.png}
-\caption{Tableau}
+\caption{Tableau sur le quel le graphique est basé ( pour un \textit{p} compris entre deux valeurs de ce tableau il est plus judicieux de choisir un \textit{n} borné vers le bas, exemple : \textit{p} = 18 et \textit{n} = 17}
 \label{Tableau}
 \end{wrapfigure}
 
-Pour un temps infinis le programme peut gérer aux maximums c'est cas ci ( voir tableau ) en effet la plus part des valeurs dont celle qui stocke le nombres de mots sont des \textsc{unsigned int} ainsi le nombre maximum représentable est de $2^{32}-1$ ainsi il suffit de calculer le 'N' et 'P' maximum pour le quel $\comb_{n+p}^n$ $\leq 2^{32}-1$. \\ rr
+Pour un temps infinis le programme qui est compilé en \textbf{analyse combinatoire} ou \textbf{recherche exhaustive} peut gérer aux maximums ces cas ci ( voir tableau ) en effet la plus part des valeurs, dont celle qui stocke le nombres de "n-p mots" sont des \textsc{unsigned int} ainsi le nombre de mots différents possible est : $2^{32}-1$. Pour trouver ces résultats il a juste fallu calculer les \textit{n} et \textit{p} maximum pour les quels $\comb_{n+p}^n$ $\leq 2^{32}-1$.
+Bien évidement \textit{n} et \textit{p} sont interchangeable. \\ \\Pour la \textbf{simulation}, c'est un peu différent, la limite réside dans le nombres d'essais et doit donc être inférieur ou égale à $2^{32}-1$. \\ \\ Cependant en pratique le programme n'est pas tellement efficace pour des nombres aussi élevé... Prenons un \textit{n} égale à 13 et un \textit{p} égale à 24 par exemple, l’exécution du programme prends $\sim$ 143 secondes... Ce qui est énorme et donc pas tellement utilisable. Dans ce genre de situation la simulation bien que moins "correcte" sera plus intéressante, en effet pour un \textit{n} et \textit{p} équivalent et un nombres d'essais élevé nous tombons sur une réponses presque équivalente en moins de 6 secondes. 
+\\
+     \begin{figure}[!h]
+			\centering
+\includegraphics[scale=0.25]{exemple2.png}
+			\caption{Exemple d’exécution}
+		\end{figure}
+
+
 \newpage
 
 \subsection{Limites avec une durée finie ( 15 secondes )}
-
+Le graphique ci-dessous montres les \textit{n} et \textit{p} maximum pour les quels la compilation prends moins de quinze secondes, ce qui rend ainsi le programme beaucoup plus utilisable.
 \begin{figure}[!h]
 			\centering
-\includegraphics[scale=0.5]{graphique2.png}
-			\caption{Graphique}
+\includegraphics[scale=0.4]{graphique2.png}
 		\end{figure}
-		
-\begin{wrapfigure}[6]{l}{4cm}
-\includegraphics[scale=0.5]{tableau2.png}
-\caption{Tableau2}
-\label{Tableau}
-\end{wrapfigure}
 
- 
+Nous pouvons constater des phénomènes intéressant, déjà l'analyse combinatoire et la recherche exhaustive sont assez proche, bien que l'analyse combinatoire reste la plus efficace des deux, nous pouvons utiliser des nombres plus élevé pour un résultat plus rapide. Cependant la simulation (1000000 essais) qu’importe le nombre de \textit{n}  ou \textit{p} $\leq 16500$. La compilation prendra moins de quinze secondes et restera à ce temps fixe, ce qui peut être fortement utile si nous recherchons des approximations.
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.5]{tableau2.png}
+\caption{Tableau sur le quel le graphique est basé}
+
+Tous ces tests ont été fait sur les machines de l'université et montre ainsi les limites du programme.
+\end{figure}
+\newpage
+
+
+
 \end{document}
