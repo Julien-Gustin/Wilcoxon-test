@@ -1,6 +1,0 @@
-\babel@toc {french}{}
-\contentsline {section}{\numberline {1}Analyse th\IeC {\'e}orique}{2}
-\contentsline {section}{\numberline {2}Utilisation du programme}{3}
-\contentsline {section}{\numberline {3}Limites du programme}{4}
-\contentsline {subsection}{\numberline {3.1}Limites avec une dur\IeC {\'e}e infinis }{4}
-\contentsline {subsection}{\numberline {3.2}Limites avec une dur\IeC {\'e}e finie ( 15 secondes )}{5}
